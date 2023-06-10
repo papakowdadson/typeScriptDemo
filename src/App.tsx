@@ -2,6 +2,7 @@ import Button from "./components/Button";
 import Input from "./components/Input";
 import PersonList from "./components/PersonList";
 import { Status } from "./components/Status";
+import Users from "./components/Users";
 import Greet from "./components/greet";
 import Person from "./components/person";
 
@@ -31,9 +32,9 @@ function App() {
      <Person name={Name} /> 
      <PersonList names={nameList} />
      <Status status="loading"/> 
-     <Button handleClick={(event,id)=>{console.log('clicked',event,id)}}
-  />
-  <Input value="" handleChange={(event)=>console.log(event)}/>
+     <Button handleClick={(event,id)=>{console.log('clicked',event,id)}}/>
+     <Input value="" handleChange={(event)=>console.log(event)}/>
+     <Users/>
     </div>
   );
 }
