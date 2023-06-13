@@ -5,6 +5,8 @@ import { Status } from "./components/Status";
 import Users from "./components/Users";
 import Greet from "./components/greet";
 import Person from "./components/person";
+import Text from "./components/polymorphic/Text";
+import { RandomNumber } from "./components/restriction/restriction";
 
 function App() {
  const Name={
@@ -35,6 +37,8 @@ function App() {
      <Button handleClick={(event,id)=>{console.log('clicked',event,id)}}/>
      <Input value="" handleChange={(event)=>console.log(event)}/>
      <Users/>
+     <RandomNumber value={5} isZero/>
+     <Text>Polymorpic</Text>
     </div>
   );
 }
